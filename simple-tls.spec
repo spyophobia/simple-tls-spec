@@ -17,6 +17,8 @@ with a layer of TLS encryption. gRPC protocol is supported.
 %autosetup
 
 %build
+# Explicitly clear $GOPROXY to prevent build failure
+export GOPROXY=''
 go build -ldflags "-X main.version=%{version}"
 
 %check
