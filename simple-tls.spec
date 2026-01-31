@@ -2,7 +2,7 @@
 
 Name: simple-tls
 Version: 0.8.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: A simple TCP repeater that adds a layer of TLS wrapping
 License: GPLv3
 URL: https://github.com/IrineSistiana/simple-tls
@@ -34,6 +34,8 @@ install -Dpm 755 %{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Jan 31 2026 spyophobia - 0.8.0-3
+
 * Fri Aug 18 2023 spyophobia - 0.8.0-2
 - Rebuild using updated Go binaries from official repo
 
